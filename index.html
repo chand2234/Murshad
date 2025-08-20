@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Muneeba 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="balloon balloon-1">🎈</div>
+        <div class="balloon balloon-2">🎈</div>
+        <div class="balloon balloon-3">🎈</div>
+        <div class="star star-1">✨</div>
+        <div class="star star-2">⭐</div>
+        <div class="star star-3">🌟</div>
+        <div class="sparkle sparkle-1">💫</div>
+        <div class="sparkle sparkle-2">✨</div>
+        <div class="sparkle sparkle-3">🌟</div>
+        <div class="heart heart-1">💖</div>
+        <div class="heart heart-2">💕</div>
+        <div class="heart heart-3">💗</div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-container">
+        <div class="progress-dots">
+            <span class="dot active" data-page="0"></span>
+            <span class="dot" data-page="1"></span>
+            <span class="dot" data-page="2"></span>
+            <span class="dot" data-page="3"></span>
+            <span class="dot" data-page="4"></span>
+            <span class="dot" data-page="5"></span>
+            <span class="dot" data-page="6"></span>
+            <span class="dot" data-page="7"></span>
+        </div>
+    </div>
+
+    <!-- Homepage -->
+    <div class="page active" id="page-0">
+        <div class="container">
+            <div class="birthday-title">
+                <h1 class="animated-text">Happy Birthday</h1>
+                <h2 class="name-text">Muneeba</h2>
+                <div class="emoji-line">🎉💖✨</div>
+            </div>
+            <div class="subtitle">
+                <p class="typewriter">Get ready for a magical journey...</p>
+            </div>
+            <button class="journey-btn" onclick="nextPage()">
+                <span>Start Journey</span>
+                <div class="btn-sparkle">✨</div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Journey Page 1 -->
+    <div class="page" id="page-1">
+        <div class="container">
+            <div class="journey-content">
+                <div class="image-container">
+                    <img src="pics/pic1.png" alt="Beautiful moment" class="journey-image">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="message-container">
+                    <h3 class="journey-message">Muneeba, you are the sweetest person 🌸</h3>
+                    <p class="journey-subtitle">Your kindness touches everyone around you</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="nav-btn back-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journey Page 2 -->
+    <div class="page" id="page-2">
+        <div class="container">
+            <div class="journey-content">
+                <div class="image-container">
+                    <img src="pics/pic2.png" alt="Special moment" class="journey-image">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="message-container">
+                    <h3 class="journey-message">Every moment with you feels special ✨</h3>
+                    <p class="journey-subtitle">You make ordinary days extraordinary</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="nav-btn back-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journey Page 3 -->
+    <div class="page" id="page-3">
+        <div class="container">
+            <div class="journey-content">
+                <div class="image-container">
+                    <img src="pics/pic3.png" alt="Bright moment" class="journey-image">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="message-container">
+                    <h3 class="journey-message">Your smile makes the world brighter 🌈</h3>
+                    <p class="journey-subtitle">You light up every room you enter</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="nav-btn back-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journey Page 4 -->
+    <div class="page" id="page-4">
+        <div class="container">
+            <div class="journey-content">
+                <div class="image-container">
+                    <img src="pics/pic4.png" alt="Happy moment" class="journey-image">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="message-container">
+                    <h3 class="journey-message">You deserve all the happiness 💕</h3>
+                    <p class="journey-subtitle">May your dreams come true this year</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="nav-btn back-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journey Page 5 -->
+    <div class="page" id="page-5">
+        <div class="container">
+            <div class="journey-content">
+                <div class="image-container">
+                    <img src="pics/pic5.png" alt="Friendship moment" class="journey-image">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="message-container">
+                    <h3 class="journey-message">Cheers to our friendship 🦋</h3>
+                    <p class="journey-subtitle">Best friends like you are rare treasures</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="nav-btn back-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journey Page 6 (Final Journey) -->
+    <div class="page" id="page-6">
+        <div class="container">
+            <div class="journey-content">
+                <div class="image-container">
+                    <img src="pics/pic6.png" alt="Birthday celebration" class="journey-image">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="message-container">
+                    <h3 class="journey-message">Happy Birthday Muneeba 🎂💖</h3>
+                    <p class="journey-subtitle">Another year of amazing adventures awaits!</p>
+                </div>
+                <div class="confetti-container" id="confetti-container"></div>
+            </div>
+            <div class="navigation">
+                <button class="nav-btn back-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn surprise-btn" onclick="showGallery()">See All Memories 🎁</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Gallery Page -->
+    <div class="page" id="page-7">
+        <div class="container">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Our Beautiful Memories 💖</h2>
+                <p class="gallery-subtitle">A collection of precious moments</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="animation-delay: 0.1s">
+                    <img src="pics/pic1.png" alt="Memory 1">
+                    <div class="gallery-overlay">
+                        <span>Sweet Memories 🌸</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.2s">
+                    <img src="pics/pic2.png" alt="Memory 2">
+                    <div class="gallery-overlay">
+                        <span>Special Moments ✨</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.3s">
+                    <img src="pics/pic3.png" alt="Memory 3">
+                    <div class="gallery-overlay">
+                        <span>Bright Days 🌈</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.4s">
+                    <img src="pics/pic4.png" alt="Memory 4">
+                    <div class="gallery-overlay">
+                        <span>Happy Times 💕</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.5s">
+                    <img src="pics/pic5.png" alt="Memory 5">
+                    <div class="gallery-overlay">
+                        <span>Friendship 🦋</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="animation-delay: 0.6s">
+                    <img src="pics/pic6.png" alt="Memory 6">
+                    <div class="gallery-overlay">
+                        <span>Birthday Joy 🎂</span>
+                    </div>
+                </div>
+            </div>
+            <div class="final-message">
+                <h3>Muneeba, you're truly special.</h3>
+                <p>Wishing you endless joy 💖🎂🎉</p>
+            </div>
+            <div class="navigation">
+                <button class="nav-btn back-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn surprise-btn" onclick="surpriseMe()">Surprise Me 🎁</button>
+                <button class="nav-btn home-btn" onclick="goHome()">Start Over 🏠</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Surprise Message -->
+    <div class="surprise-popup" id="surprise-popup">
+        <div class="surprise-content">
+            <h3>🎉 Special Surprise! 🎉</h3>
+            <p>You're not just a year older, you're a year more awesome! 🌟</p>
+            <div class="surprise-hearts">💖💕💗💖💕💗</div>
+            <button class="close-surprise" onclick="closeSurprise()">Close ✨</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
